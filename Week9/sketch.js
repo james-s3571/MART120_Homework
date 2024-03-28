@@ -49,4 +49,10 @@ function draw()
     line(180,70,500,175);
     line(170,40,500,150);
     line(200,70,500,150);
+
+    // name and title
+    textSize(32);
+    text('Odd Me', 10, 30);
+    textSize(16);
+    text('James Schoenfelder', 10, 580);
 }

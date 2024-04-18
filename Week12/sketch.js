@@ -152,5 +152,4 @@ function draw()
     win();
 
     mouseClicked();
-}
-
+}    

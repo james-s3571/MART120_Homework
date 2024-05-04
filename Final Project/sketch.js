@@ -1,10 +1,8 @@
 var parastand
-var jumpSound
 
 function preload()
 {
     parastand = createImg('parastand.png.png')
-    jumpSound = loadSound('jumpSound.wav')
 }
 
 
@@ -99,8 +97,7 @@ function gravity()
             }
         }    
         else
-            {
-                jumpSound.play();
+            {               
                 velocity = -jumpstrength;
                 jumpCounter = jumpCounter+1;
             }
@@ -204,12 +201,5 @@ if (playerx >= tboxx-tboxWidth/2 && playerx <= tboxx+tboxWidth/2 && playery+play
     velocity = 0;
     jumpCounter = 0;
 }
-/*if (playerx >= boxx-boxWidth/2 && playerx <= boxx+boxWidth/2 && playery >= boxy-boxHeight/2 && playery <= boxy+boxHeight/2 && jump == false)
-{
-    playery = playery;
-    velocity = 0;
-    jumpCounter = 0;
-}
-*/
 }    
 
